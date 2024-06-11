@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#main {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+#cursor{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(163, 109, 169);
+    border-radius:50%;
+    position: fixed;
+    z-index: 10;
+}
+
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 3vw;
+    background-color: rgb(29, 29, 29);
+}
+nav h3{
+    color: antiquewhite;
+}
+
+nav ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li a{
+    
+    color: rgb(197, 197, 197);
+    cursor: pointer;
+    margin: 0 9px;
+    text-decoration: none;
+
+}
+
+
+
+
+.cards{
+    display: grid;
+    padding: 1vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card{
+    margin-top: 2vh;
+    color: rgb(149, 164, 178);
+    background-color: rgb(57, 55, 55);
+    
+}
+
+.card p{
+    margin-top: 1vh;
+    font-size: 1rem;
+
+
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h5{
+    margin-top: 1vh;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(134, 148, 255);
+}
+.card a{
+    color: rgb(140, 181, 249);
+    font-size: 13px;
+    border: 2px solid rgb(69, 75, 76);
+    background-color: rgba(60, 60, 227, 0);
+}
+
+#category,#country{
+
+    padding: 4px;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:transparent;
+    /* font-size: 1rem; */
+    outline: none;
+    font-weight: 600;
+}
+
+option{
+    background-color: rgb(35, 34, 34);
+    font-weight: 600;
+}
